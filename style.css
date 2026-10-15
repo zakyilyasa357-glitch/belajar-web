@@ -7,11 +7,20 @@
 }
 
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* Menghubungkan ke file gambar wallpaper */
+    background-image: url('baground.avif');
+
+    /* Agar gambar memenuhi seluruh layar laptop/HP */
+    background-size: cover;
+
+    /* Agar gambar posisinya selalu di tengah */
+    background-position: center;
+
+    /* Agar gambar tidak mengulang (no-repeat) */
+    background-repeat: no-repeat;
+
+    /* Agar background tidak ikut bergeser saat di-scroll */
+    background-attachment: fixed;
 }
 
 /* Kontainer Utama Login */
