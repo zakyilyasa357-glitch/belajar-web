@@ -206,3 +206,64 @@ body {
         display: none; /* Sembunyikan menu di HP agar simpel */
     }
 }
+/* Styling Galeri Karya */
+.portfolio-section {
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.portfolio-section h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.section-desc {
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* Grid Layout */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Kartu Portofolio */
+.portfolio-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 16px;
+}
+
+.card-info h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
