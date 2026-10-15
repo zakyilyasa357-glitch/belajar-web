@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Profil - Portfolio Saya</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigasi Atas -->
+    <nav class="navbar">
+        <div class="logo">PortofolioKu</div>
+        <ul class="nav-links">
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#gallery">Galeri Karya</a></li>
+        </ul>
+        <div class="user-action">
+            <a href="index.html" class="btn-logout">Keluar</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Bagian 1: Tentang Saya (About Me) -->
+        <section id="about" class="section profile-card">
+            <div class="profile-header">
+                <img src="poto_profil.jpeg" alt="Foto Profil" class="profile-img">
+                <div class="profile-info">
+                    <h2 id="nama-user">Halo, Selamat Datang! 👋</h2>
+                    <p class="role">Pengembang Web / Desainer Grafis</p>
+                    <p class="bio">
+                        Saya seorang pelajar yang berfokus pada pengembangan aplikasi web, antarmuka pengguna (UI/UX), dan desain visual. Selamat datang di halaman portofolio pribadi saya!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 2: Daftar Keahlian (Skills) -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Keahlian Saya</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML & CSS</h3>
+                    <p>Membuat struktur dan desain antarmuka web yang rapi dan responsif.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Menambahkan interaktivitas dan logika dasar pada halaman web.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Desain Visual / UI UX</h3>
+                    <p>Merancang tata letak antarmuka aplikasi dan komposisi visual yang menarik.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Flutter & Dart</h3>
+                    <p>Pengembangan aplikasi mobile lintas platform.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 3: Galeri Hasil Karya (Gallery) -->
+        <section id="gallery" class="section">
+            <h2 class="section-title">Galeri Hasil Karya</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="karya2.jpeg" alt="Proyek 1">
+                    <div class="gallery-info">
+                        <h4>Aplikasi Web Login</h4>
+                        <p>Desain halaman login modern dengan HTML & CSS.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="karya3.jpeg" alt="Proyek 2">
+                    <div class="gallery-info">
+                        <h4>Layout Aplikasi Mobile</h4>
+                        <p>Desain antarmuka aplikasi menggunakan Flutter.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="karya4.jpeg" alt="Proyek 3">
+                    <div class="gallery-info">
+                        <h4>Desain Nirmana / Visual</h4>
+                        <p>Komposisi warna dan elemen desain dua dimensi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<script>
+        // Mengambil data email/nama yang disimpan saat login
+        const user = localStorage.getItem('namaPengguna');
+        
+        // Jika datanya ada, ubah teks judul secara otomatis
+        if (user) {
+            document.getElementById('nama-user').innerText = `Halo, ${user}! 👋`;
+        }
+    </script>
+</body>
+</html>
